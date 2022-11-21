@@ -1,0 +1,87 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0px;
+}
+
+.bloc_pages {
+  width: auto;
+}
+
+header {
+  text-align: center;
+}
+
+#logo_ohmyfood {
+  width: 140px;
+  padding: 20px 0 10px 0;
+}
+
+#localisation {
+  width: 10px;
+  margin-right: 10px;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 15px 0;
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0 10px 5px -10px rgb(190, 190, 190) inset;
+}
+
+.explorer {
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  padding: 30px 0 60px 0;
+}
+
+.explorer h1 {
+  margin: 0px;
+  padding: 0 40px 0 40px;
+  font-size: 25px;
+}
+
+.explorer p {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  margin: 10px 10px 30px 20px;
+}
+
+.btn-explorer {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  margin: -10px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 30px;
+}
+
+.fonctionnement {
+  margin: 50px 20px 0 20px;
+}
+
+.titre_fonctionnement {
+  margin-bottom: 20px;
+}
+
+.etape1, .etape2, .etape3 {
+  display: flex;
+  padding: 25px 0 25px 15px;
+  margin: 0 0 20px 5px;
+  border-radius: 15px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0px 5px 10px 0px lightgrey;
+}
+
+.etape1 p, .etape2 p, .etape3 p {
+  margin: 0px;
+  padding-left: 20px;
+}
+
+i {
+  color: rgb(98, 98, 98);
+  padding-top: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */
