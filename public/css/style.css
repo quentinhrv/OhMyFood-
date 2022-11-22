@@ -26,7 +26,6 @@ header {
   justify-content: center;
   padding: 15px 0 15px 0;
   background-color: rgb(235, 235, 235);
-  box-shadow: 0 10px 5px -10px rgb(190, 190, 190) inset;
 }
 
 .explorer {
@@ -58,7 +57,7 @@ header {
 }
 
 .fonctionnement {
-  margin: 50px 20px 0 20px;
+  margin: 50px 20px 60px 20px;
 }
 
 .titre_fonctionnement {
@@ -82,6 +81,40 @@ header {
 i {
   color: rgb(98, 98, 98);
   padding-top: 8px;
+}
+
+a {
+  color: #181818;
+  text-decoration: none;
+}
+
+.restaurants {
+  background-color: rgb(245, 245, 245);
+  padding: 40px 20px 40PX 20px;
+}
+
+.imgrestaurant {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 175px;
+}
+
+.palette_du_gout, .note_enchantee, .la_francaise, .delice_des_sens {
+  background-color: white;
+  border-radius: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 10px 0px lightgrey;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 15px 0 0 15px;
+}
+
+.palette_du_gout p, .note_enchantee p, .la_francaise p, .delice_des_sens p {
+  margin: 5px 0 0 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

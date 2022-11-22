@@ -1,10 +1,4 @@
-$color-primary: #FF79DA;
-$color-secondary: #9356DC;
-
-$background-lighter: rgb(245, 245, 245);
-$background-primary: rgba(235, 235, 235);
-$background-darker: rgb(98, 98, 98);
-
+@import "./utils/_variables.scss";
 
 body {
     font-family: Roboto, Arial, sans-serif;
@@ -65,7 +59,7 @@ header {
 }
 
 .fonctionnement {
-    margin: 50px 20px 0 20px;
+    margin: 50px 20px 60px 20px;
 }
 
 .titre_fonctionnement {
@@ -91,3 +85,39 @@ i {
     padding-top: 8px;
 
 }
+
+a {
+    color: #181818;
+    text-decoration: none;
+}
+
+.restaurants {
+    background-color: $background-lighter;
+    padding: 40px 20px 40PX 20px;
+}
+
+.imgrestaurant
+{
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 175px;
+}
+
+.palette_du_gout, .note_enchantee, .la_francaise, .delice_des_sens {
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px 0px lightgrey;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 15px 0 0 15px;
+}
+
+.palette_du_gout p, .note_enchantee p, .la_francaise p, .delice_des_sens p {
+    margin: 5px 0 0 15px;
+}
+
