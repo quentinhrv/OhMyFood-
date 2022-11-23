@@ -44,7 +44,7 @@ input::placeholder {
 .explorer {
     text-align: center;
     background-color: $background-lighter;
-    padding: 30px 0 60px 0;
+    padding: 30px 0 65px 0;
 }
 
 .explorer h1 {
@@ -56,7 +56,7 @@ input::placeholder {
 .explorer p {
     font-family: Roboto, Arial, sans-serif;
     font-size: 18px;
-    margin: 10px 10px 30px 20px;
+    margin: 10px 10px 50px 20px;
 }
 
 .btn-explorer {
@@ -74,14 +74,14 @@ input::placeholder {
 }
 
 .titre_fonctionnement {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .etape1, .etape2, .etape3 {
     display: flex;
     position: relative;
     padding: 25px 0 25px 35px;
-    margin: 0 0 20px 5px;
+    margin: 0 0 25px 5px;
     border-radius: 15px;
     background-color: $background-lighter;
     box-shadow: 0px 5px 10px 0px lightgrey;
@@ -129,12 +129,24 @@ a {
     height: 175px;
 }
 
+.new {
+    background-color: $color-tertiary;
+    position: absolute;
+    top: 5%;
+    right: 20px;
+    font-size: 14px;
+    color: darken($color-tertiary, 35);
+    font-weight: bold;
+    padding: 8px 15px 8px 15px;
+}
+
 .palette_du_gout, .note_enchantee, .la_francaise, .delice_des_sens {
     background-color: white;
     border-radius: 20px;
     padding-bottom: 15px;
     margin-bottom: 20px;
     box-shadow: 0px 5px 10px 0px lightgrey;
+    position: relative;
 }
 
 h2 {
@@ -144,5 +156,23 @@ h2 {
 
 .palette_du_gout p, .note_enchantee p, .la_francaise p, .delice_des_sens p {
     margin: 5px 0 0 15px;
+}
+
+footer h1 {
+    font-family: Shrikhand, cursive;
+    font-size: 19px;
+}
+
+footer {
+    background-color: darken($background-primary, 70);
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    color: white;
 }
 
