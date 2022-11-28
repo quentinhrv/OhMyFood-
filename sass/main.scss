@@ -102,7 +102,7 @@ input::placeholder {
     padding-left: 25px;
 }
 
-i {
+.fa-mobile-screen-button, .fa-list, .fa-store {
     color: $background-darker;
     padding-top: 8px;
 }
@@ -145,6 +145,14 @@ a {
     color: darken($color-tertiary, 35);
     font-weight: bold;
     padding: 8px 15px 8px 15px;
+}
+
+.fa-heart {
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    font-size: 25px;
+    transition-duration: 400ms;
 }
 
 .palette_du_gout, .note_enchantee, .la_francaise, .delice_des_sens {
@@ -204,5 +212,3 @@ ul {
 li {
     padding: 0 0 5px 20px;
 }
-
-
