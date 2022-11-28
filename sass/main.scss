@@ -212,3 +212,16 @@ ul {
 li {
     padding: 0 0 5px 20px;
 }
+
+@media (min-width: 650px) {
+    .etapes {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .etape1, .etape2, .etape3 {
+        width: 25%;
+        padding-right: 10px;
+    }
+}
