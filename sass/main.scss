@@ -7,6 +7,77 @@ body {
 
 .bloc_pages {
     width: auto;
+    z-index: 1;
+}
+
+.loader {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    animation: loader 3000ms;
+    transform: scale(0);
+    z-index: 2
+}
+
+.ball1 {
+    @include ball;
+    background: $color-primary;
+    animation: progress-ball 3000ms;
+}
+
+.ball2 {
+    background: $color-secondary;
+    @include ball;
+    animation: progress-ball 3000ms;
+    animation-delay: 200ms;
+}
+
+.ball3 {
+    background: $color-tertiary;
+    @include ball;
+    animation: progress-ball 3000ms;
+    animation-delay: 400ms;
+}
+
+@keyframes progress-ball {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(2);
+    }
+    40% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    80% {
+        opacity: 1;
+    }
+    99% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 header {
@@ -84,7 +155,7 @@ input::placeholder {
     margin-bottom: 30px;
 }
 
-.etape1, .etape2, .etape3 {
+.etape {
     display: flex;
     position: relative;
     padding: 25px 0 25px 35px;
@@ -95,11 +166,15 @@ input::placeholder {
     &:hover {
         background-color: lighten($color-secondary, 30);
     }
+    &:hover > .fa-mobile-screen-button, &:hover > .fa-list, &:hover > .fa-store {
+        color: $color-secondary;
+    }
 }
 
-.etape1 p, .etape2 p, .etape3 p {
+.etape p {
     margin: 0px;
     padding-left: 25px;
+    font-weight: bold;
 }
 
 .fa-mobile-screen-button, .fa-list, .fa-store {
@@ -107,7 +182,7 @@ input::placeholder {
     padding-top: 8px;
 }
 
-.number1, .number2, .number3 {
+.number {
     font-size: 14px;
     padding: 4px 8px 4px 8px;
     background-color: $color-secondary;
@@ -123,7 +198,7 @@ a {
     text-decoration: none;
 }
 
-.restaurants {
+.bloc_restaurants {
     background-color: $background-lighter;
     padding: 40px 20px 40PX 20px;
 }
@@ -153,9 +228,13 @@ a {
     right: 30px;
     font-size: 25px;
     transition-duration: 400ms;
+    &:hover {
+        font-weight: bold;
+        color: $color-primary;
+    }
 }
 
-.palette_du_gout, .note_enchantee, .la_francaise, .delice_des_sens {
+.restaurant {
     background-color: white;
     border-radius: 20px;
     padding-bottom: 15px;
@@ -169,13 +248,14 @@ h2 {
     margin: 15px 0 0 15px;
 }
 
-.palette_du_gout p, .note_enchantee p, .la_francaise p, .delice_des_sens p {
+.restaurant p {
     margin: 5px 0 0 15px;
 }
 
-footer h1 {
+footer h2 {
     font-family: Shrikhand, cursive;
-    font-size: 19px;
+    font-size: 17px;
+    padding: 0 0 20px 5px;
 }
 
 footer {
@@ -183,14 +263,11 @@ footer {
     color: white;
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 
 footer a {
     color: white;
-}
-
-footer h1 {
-    padding: 0 0 0 20px;
 }
 
 .fa-utensils {
@@ -213,15 +290,27 @@ li {
     padding: 0 0 5px 20px;
 }
 
-@media (min-width: 650px) {
-    .etapes {
+@media (min-width: 914px) {
+    .bloc_etape {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .etape {
+        width: 25%;
+        padding-right: 10px;
+    }
+
+    .card_restaurants {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 
-    .etape1, .etape2, .etape3 {
-        width: 25%;
-        padding-right: 10px;
+    .restaurant {
+        width: 23%;
+        min-width: 250px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
