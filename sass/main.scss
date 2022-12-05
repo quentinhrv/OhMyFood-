@@ -1,15 +1,12 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./base/typography";
 @import "./layouts/header";
+@import "./pages/menu";
 
 body {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: $main-police;
     margin: 0px
-}
-
-.bloc_pages {
-    width: auto;
-    z-index: 1;
 }
 
 .loader {
@@ -117,14 +114,8 @@ input::placeholder {
     padding: 30px 0 65px 0;
 }
 
-.explorer h1 {
-    margin: 0px;
-    padding: 0 40px 0 40px;
-    font-size: 25px;
-}
-
 .explorer p {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: $main-police;
     font-size: 18px;
     margin: 10px 10px 50px 20px;
 }
@@ -237,19 +228,15 @@ a {
     position: relative;
 }
 
-h2 {
-    font-size: 18px;
-    margin: 15px 0 0 15px;
-}
-
 .restaurant p {
     margin: 5px 0 0 15px;
 }
 
-footer h2 {
-    font-family: Shrikhand, cursive;
-    font-size: 17px;
-    padding: 0 0 20px 5px;
+.fa-arrow-left {
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    left: 25px;
 }
 
 footer {
