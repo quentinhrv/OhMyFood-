@@ -1,3 +1,7 @@
+header {
+  text-align: center;
+}
+
 body {
   font-family: Roboto, Arial, sans-serif;
   margin: 0px;
@@ -88,10 +92,6 @@ body {
     opacity: 0;
   }
 }
-header {
-  text-align: center;
-}
-
 #logo_ohmyfood {
   width: 140px;
   padding: 20px 0 10px 0;
@@ -235,10 +235,6 @@ a {
   right: 30px;
   font-size: 25px;
   transition-duration: 400ms;
-}
-.fa-heart:hover {
-  font-weight: bold;
-  color: #FF79DA;
 }
 
 .restaurant {

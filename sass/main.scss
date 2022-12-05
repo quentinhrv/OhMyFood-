@@ -1,4 +1,6 @@
-@import "./utils/_variables.scss";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./layouts/header";
 
 body {
     font-family: Roboto, Arial, sans-serif;
@@ -78,10 +80,6 @@ body {
     100% {
         opacity: 0;
     }
-}
-
-header {
-    text-align: center;
 }
 
 #logo_ohmyfood {
@@ -228,10 +226,6 @@ a {
     right: 30px;
     font-size: 25px;
     transition-duration: 400ms;
-    &:hover {
-        font-weight: bold;
-        color: $color-primary;
-    }
 }
 
 .restaurant {
