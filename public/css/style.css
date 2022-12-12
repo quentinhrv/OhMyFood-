@@ -51,8 +51,16 @@ h3 {
   top: 200px;
   right: 30px;
   font-size: 25px;
-  transition-duration: 400ms;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border: none;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  cursor: pointer;
+}
+.fa-heart:active, .fa-heart:hover {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0;
+  transform: scale(1.1);
 }
 
 .card-restaurant {
