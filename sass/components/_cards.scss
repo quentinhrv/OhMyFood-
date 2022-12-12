@@ -1,0 +1,33 @@
+.card-restaurant {
+    background-color: $text-secondary;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px 0px lightgrey;
+    position: relative;
+
+    p {
+        margin: 5px 0 0 15px;
+        font-weight: $font-weight-light;
+    }
+        
+    a {
+        color: $text-primary;
+        text-decoration: none;
+    }
+
+    h3 {
+        margin: 10px 0 0 15px;
+    }
+}
+
+.new {
+    background-color: $tertiary;
+    position: absolute;
+    top: 5%;
+    right: 20px;
+    font-size: 14px;
+    color: darken($tertiary, 35);
+    font-weight: $font-weight-bold;
+    padding: 8px 15px 8px 15px;
+}

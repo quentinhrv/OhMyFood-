@@ -1,0 +1,108 @@
+@keyframes dish-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dish {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px 0px lightgrey;
+    padding: 10px 10px 5px 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    &:hover > .box-check {
+        transform: translateX(-55px);
+    }
+    
+    &:hover .fa-circle-check {
+        transform: rotate(360deg);
+    }
+
+    &:hover .dish-description {
+        transition: width 330ms ease-in-out;
+        width: 65%;
+    }
+
+    p {
+        font-weight: $font-weight-light;
+    }
+
+    .box-check {
+        display: flex;
+        margin: -10px 0 -5px 0;
+        position: absolute;
+        right: -55px;
+        transition: transform 330ms ease-in-out;
+
+        p {
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    .dish-description {
+        width: 85%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: 330ms;
+        p, h3 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .fa-circle-check {
+        font-size: 23px;
+        background-color: $text-secondary;
+        color: $tertiary;
+        border-radius: 15px;
+        transition: transform 330ms ease-in-out;
+        transition-delay: 100ms;
+    }
+
+    .add {
+        padding: 22px 15px 20px 15px;
+        border-radius: 0 15px 15px 0;
+        background-color: $tertiary;
+    }
+
+    .price {
+        padding: 32px 20px 0 0 ;
+    }
+}
+
+.dish1 {
+    animation: dish-appear 1500ms;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.dish2 {
+    animation: dish-appear 1500ms;
+    animation-fill-mode: both;
+    animation-delay: 250ms;
+    opacity: 0;
+}
+
+.dish3 {
+    animation: dish-appear 1500ms;
+    animation-fill-mode: both;
+    animation-delay: 500ms;
+    opacity: 0;
+}
+
+.dish4 {
+    animation: dish-appear 1500ms;
+    animation-fill-mode: both;
+    animation-delay: 750ms;
+    opacity: 0;
+}

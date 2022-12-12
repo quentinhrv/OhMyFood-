@@ -1,3 +1,66 @@
+@mixin stage {
+    display: flex;
+    position: relative;
+    padding: 27px 0 27px 35px;
+    margin: 0 0 25px 5px;
+    border-radius: 15px;
+    background-color: $background-lighter;
+    box-shadow: $box-shadow;
+
+    p {
+        margin: 0px;
+        padding-left: 25px;
+        font-weight: $font-weight-bold;
+    }
+}
+
+@mixin number {
+    font-size: 14px;
+    padding: 4px 8px 4px 8px;
+    background-color: $secondary;
+    color: $text-secondary;
+    border-radius: 30px;
+    position: absolute;
+    top: 25px;
+    left: -10px;
+}
+
+@mixin menu {
+    background-color: $background-lighter;
+    padding: 15px;
+    position: relative;
+    border-radius: 40px 40px 0 0;
+    
+    h1 {
+        font-family: $font-family-title;
+        font-size: 25px;
+        margin: 20px 0 0 0;
+    }
+
+    h2 {
+        margin: 30px 0 0 0;
+        padding-bottom: 5px;
+    }
+
+    h3 {
+        margin: 0px;
+    }
+
+    p {
+        margin: 5px 0 5px 0;
+    }
+
+    .fa-heart {
+        top: 40px;
+    }
+
+    .stage-menu {
+        width: 45px;
+        flex-wrap: nowrap;
+        border-bottom: 3px solid $tertiary;
+    }
+}
+
 @mixin ball {
     margin: 50px 20px 50px 10px;
     width: 20px;

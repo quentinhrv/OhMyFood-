@@ -1,0 +1,27 @@
+@import "../utils/colors";
+@import "../utils/variables";
+
+.button-explore {
+    background: linear-gradient(to bottom right, $primary, $secondary);
+    font-size: $font-size-button;
+    color: $text-secondary;
+    cursor: pointer;
+    margin: -10px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 30px;
+    box-shadow: $box-shadow;
+    transition-duration: 250ms;
+    &:hover {
+        filter: brightness(110%);
+        box-shadow: $box-shadow-bigger;
+    }
+}
+
+.fa-heart {
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    font-size: 25px;
+    transition-duration: 400ms;
+    background: linear-gradient(to bottom right, $primary, $secondary);
+}

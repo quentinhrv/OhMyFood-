@@ -1,0 +1,107 @@
+@import "../utils/mixins";
+@import "../utils/breakpoints";
+
+.location {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 15px 0;
+    background-color: $background-primary;
+    box-shadow: 0 10px 5px -10px rgb(190, 190, 190) inset;
+
+    #location {
+        width: 15px;
+        margin-right: 20px;
+    }
+
+    input[type="text"] {
+        font-size: 16px;
+        border: 0 none;
+        outline: none;
+        background-color: $background-primary;
+    }
+
+    input::placeholder {
+        color: $text-primary;
+    }
+}
+
+.explorer {
+    text-align: center;
+    background-color: $background-lighter;
+    padding: 40px 0 65px 0;
+
+    p {
+        font-family: $font-family-main;
+        font-size: 18px;
+        font-weight: $font-weight-light;
+        margin: 10px 10px 50px 20px;
+    }
+}
+
+.functioning {
+    margin: 50px 20px 60px 20px;
+
+    .title-functioning {
+        margin-bottom: 30px;
+    }
+
+    .stage {
+        @include stage;
+        &:hover {
+            background-color: lighten($secondary, 30);
+        }
+        &:hover > .fa-mobile-screen-button, &:hover > .fa-list, &:hover > .fa-store {
+            color: $secondary;
+        }
+    }
+
+    .fa-mobile-screen-button, .fa-list, .fa-store {
+        color: $background-darker;
+        padding-top: 8px;
+    }
+
+    .number {
+        @include number;
+    }
+}
+
+.bloc_restaurant {
+    background-color: $background-lighter;
+    padding: 50px 20px 40PX 20px;
+
+    .image-restaurant {
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 175px;
+    }
+
+    .restaurant {
+        margin-top: 20px;
+    }
+}
+
+@include responsive {
+    .bloc_stage {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .stage {
+        width: 25%;
+        padding-right: 10px;
+    }
+
+    .restaurant {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card-restaurant {
+        width: 23%;
+        min-width: 250px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}

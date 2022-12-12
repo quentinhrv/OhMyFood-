@@ -1,0 +1,39 @@
+.container {
+    width: auto;
+    height: 225px;
+}
+
+.image-menu {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.bloc_menu {
+    @include menu;
+
+    
+}.command {
+    text-align: center;
+    margin: 50px 0 40px 0;
+}
+
+.button-explore {
+    padding: 15px 50px 15px 50px;
+}
+
+@include responsive {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .desserts {
+        padding-right: 20px;
+    }
+
+    .starters, .dishes, .desserts {
+        width: 30%;
+    }
+}

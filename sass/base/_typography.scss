@@ -1,26 +1,42 @@
-$main-police: Roboto, Arial, sans-serif;
-$logo-police: Shrikhand, cursive;
-$title-police: Shrikhand, cursive;
+$font-family-main: Roboto, Arial, sans-serif;
+$font-family-logo: Shrikhand, cursive;
+$font-family-title: Shrikhand, cursive;
 
+$font-size-logo: 30px;
+$font-size-title: 30px;
+$font-size-button: 16px;
 
-.bloc_pages {
-    width: auto;
-    z-index: 1;
+$font-weight-light: 300;
+$font-weight-bold: 700;
+
+body {
+    font-family: $font-family-main;
+    margin: 0px;
 }
 
-.explorer h1 {
+.bloc_page {
+    width: auto;
+}
+
+h1 {
+    font-family: $font-family-logo;
+    font-size: $font-size-logo;
     margin: 0px;
-    padding: 0 40px 0 40px;
-    font-size: 25px;
+}
+
+.bloc-menu h1 {
+    font-size: 28px;
 }
 
 h2 {
-    font-size: 18px;
-    margin: 15px 0 0 15px;
+    margin: 0px;
 }
 
-footer h2 {
-    font-family: $logo-police;
+.menu h2 {
     font-size: 17px;
-    padding: 0 0 20px 5px;
+    font-weight: $font-weight-light;
+}
+
+h3 {
+    margin: 0px;
 }
