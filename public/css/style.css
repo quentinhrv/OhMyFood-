@@ -30,6 +30,11 @@ h3 {
   margin: 0px;
 }
 
+button {
+  border: none;
+  background-color: none;
+}
+
 .button-explore {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   font-size: 16px;
@@ -43,7 +48,7 @@ h3 {
 }
 .button-explore:hover {
   filter: brightness(110%);
-  box-shadow: 5px 15px 15px rgb(190, 190, 190);
+  box-shadow: 0px 10px 10px rgb(190, 190, 190);
 }
 
 .fa-heart {
@@ -304,6 +309,16 @@ footer li {
   padding: 0 0 5px 20px;
 }
 
+@media screen and (min-width: 950px) {
+  footer h3 {
+    align-self: center;
+    padding: 20px 0 40px 0;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 header {
   text-align: center;
   padding: 10px 0 10px 0;
@@ -343,7 +358,7 @@ header .fa-arrow-left {
 .explorer {
   text-align: center;
   background-color: rgb(245, 245, 245);
-  padding: 40px 0 65px 0;
+  padding: 40px 20px 65px 20px;
 }
 .explorer p {
   font-family: Roboto, Arial, sans-serif;

@@ -1,6 +1,11 @@
 @import "../utils/colors";
 @import "../utils/variables";
 
+button {
+    border: none;
+    background-color: none;
+}
+
 .button-explore {
     background: linear-gradient(to bottom right, $primary, $secondary);
     font-size: $font-size-button;
